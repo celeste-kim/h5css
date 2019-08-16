@@ -1,0 +1,264 @@
+body,html{
+			height: 100%;
+			width: 100%;
+			margin: 0;
+}
+input{
+	padding: 0;
+	border:0;
+}
+.big{
+	max-width: 750px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	/*display: flex;*/
+}
+.header{
+	height: 55px;
+	max-width: 750px;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.body{
+	background-color: #F5F5F5;
+	border-top: 1px solid #E6E6E6;
+	height: 100%;
+	width: 750px;
+	border-bottom: 1px solid #ccc;
+}
+.header-left{
+	width: 10%;
+	flex: 0 0 75px;
+	height: 46px;
+	padding-left: 15px;
+	float: left;
+	position: relative;
+}
+.header-left>i{
+	float: left;
+	font-size: 20px;
+	line-height: 53px;
+	color: #636363;
+}
+.header-left>p{
+	line-height: 46px;
+	position: absolute;
+	left: 35px;
+	margin: auto;
+	color: #636363;
+}
+.header-right{
+	width: 12%;
+	height: 55px;
+	margin: auto;
+	line-height: 55px;
+	font-size: 20px;
+}
+.search{
+	height: 90px;
+	background-color: #E3E4E6;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	/*设置搜索框居中*/
+	display: flex;
+	max-width: 750px;
+	align-items: center;
+}
+.search>div>input{
+	width: 664px;
+	height: 35px;
+	font-size: 16px;
+	float: left;
+	margin: auto;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.search>div>div{
+	width: 44px;
+	height: 35px;
+	float: left;
+	background-color: #ffffff;
+	/*使里面的行内元素居中*/
+	text-align: center;
+	line-height: 35px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+/*i是行内元素*/
+.search>div>i{
+
+}
+.search::after{
+	content:"";
+	display: inline-block;
+	clear: both;
+}
+.bigpic{
+	max-width: 750px;
+	height: 200px;
+	margin-bottom: 10px;
+	/*为什么设置背景图片没有用*/
+/*	background-image: url(./汽车.jpg);
+	background-image: cover;
+	background-repeat: no-repeat;*/
+}
+.bigpic>img{
+	width: 100%;
+	height: 100%;
+}
+.card-main{
+	max-width: 750px;
+	height: 98px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 17.5px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;
+}
+.card-main>div{
+	flex: 1 1 0;
+	height: 68px;
+	margin-top: 12.5px;
+	margin-bottom: 17.5px;
+	border-right: 1px solid #E6E6E6;
+	margin: auto;
+}
+.card-main>div:last-child{
+	border-right: none;
+}
+.card-wrapper>div{
+ 	text-align: center;
+ 	font-size: 15px;
+}
+.card-wrapper>div>div{
+	height: 45px;
+	width: 100%;
+	text-align: center;
+}
+.card-wrapper>div>div>img{
+	height: 45px;
+	width: 45px;
+}
+.dynamic{
+	width: 750px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+	border-top: 1px solid #E6E6E6;
+}
+.dynamic-top{
+	width: 720px;
+	height: 490px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.dynamic-top>div>div:first-child{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	overflow: hidden;
+	float: left;
+}
+.dynamic-top>div>div>img{
+	width: 100%;
+	height: 100%;
+}
+.dynamic-top>div>div:last-child{
+	width: 670px;
+	height: 50px;
+	margin-left: 60px;
+}
+.dynamic-top>div>div:last-child>div:first-child{
+	color: #F46200;
+	font-size: 18px;
+}
+.dynamic-top>div>div:last-child>div:last-child{
+	color: #939393;
+}
+.dynamic-top>div:nth-child(2){
+	height: 224px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.dynamic-top>div:nth-child(3){
+	width: 400px;
+	height: 225px;
+}
+.dynamic-top>div:nth-child(3)>img{
+	width: 100%;
+	height: 100%;
+}
+.dynamic-bottom{
+	width: 750px;
+	height: 43.5px;
+	border-top: 1px solid #E6E6E6;
+	position: relative;
+	margin: auto;
+	border-bottom: 1px solid #E6E6E6;
+}
+.dynamic-bottom-wrapper{
+	height: 20px;
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right:0;
+	left: 0;
+	margin: auto;
+}
+.dynamic-bottom-wrapper>div{
+	flex:1;
+	height: 20px;
+	border-right: 1px solid #E6E6E6;
+	float: left;
+	text-align: center;
+	color: #939393;
+}
+.dynamic-bottom-wrapper>div:last-child{
+	border-right: none;
+}
+.dynamic-bottom-wrapper>div>i{
+	font-size: 20px;
+}
+.nav{
+	width: 780px;
+	height: 62px;
+	border-top: 1px solid #E6E6E6;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -390px;
+	background-color: #ffffff;
+	padding-top: 10px;
+	box-sizing: border-box;
+	display: flex;
+	box-shadow: 0 -1px 2px  #ccc;
+}
+.nav>div{
+	height: 46px;
+	flex: 1;
+	text-align: center;
+	position: relative;
+}
+.nav>div>span{
+	font-size: 13px;
+	/*line-height: 10px;*/
+	position: absolute;
+	top: 30px;
+	left: 64px;
+
+}
+.nav>div:first-child>span{
+	color: #FF8302;
+}
+.nav>div>img{
+	width: 30px;
+	height: 30px;
+}
